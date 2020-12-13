@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+img {
+    vertical-align: middle;
+}
+/* Hide the images by default */
+/* .container-item {
+    display: none;
+} */
+
+/* Next & previous buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 27px;
+    border-radius: 3px;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+.next {
+    right: 0;
+}
+.prev:hover, .next:hover {
+
+    transition: 0.5s all ease;
+    cursor: pointer;
+  }
+
+  /* Caption text */
+  .text {
+      position: absolute;
+      color: #f2f2f2;
+      font-size: 27px;
+      text-align: center;
+      padding: 8px 10px;
+      width: 100%;
+      bottom: 8px;
+  }
+
+  .numberText {
+      position: absolute;
+      top: 0;
+      font-size: 20px;
+      padding: 2rem;
+      color: #f2f2f2;
+  }
+
+  /* The dots/bullets/indicators */
+  .dots {
+    text-align: center;
+  }
+
+  .dots span {
+      display: inline-block;
+      background-color: rgb(187, 187, 187);
+      height: 15px;
+      width: 15px;
+      margin: auto;
+      border-radius: 50%;
+      transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @media only screen and (max-width: 600px) {
+    .prev, .next,.text {font-size: 11px;}
+  }
